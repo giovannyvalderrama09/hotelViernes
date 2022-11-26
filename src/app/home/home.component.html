@@ -1,0 +1,94 @@
+<div class="banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <app-formareserva></app-formareserva>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section>
+  <app-descripcion></app-descripcion>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-2">
+      <div class="col" *ngFor="let habitacion of habitaciones">
+        <div class="card h-100 shadow">
+          <h3 class="text-center fw-bold">{{ habitacion.nombreHabitacion }}</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="text-center text-white" style="background-color: #caced1">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Images -->
+    <section class="">
+      <div class="row">
+        <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+          <div
+            class="bg-image hover-overlay ripple shadow-1-strong rounded"
+            data-ripple-color="light"
+          >
+            <img src="https://www.sillasmesas.es/blog/wp-content/uploads/2020/03/Ideas-de-decoracion-de-hoteles-de-lujo.jpg" class="img-fluid">
+
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+          <div
+            class="bg-image hover-overlay ripple shadow-1-strong rounded"
+            data-ripple-color="light"
+          >
+            <img src="https://www.clarin.com/img/2020/10/16/dtkUJu_wK_720x0__1.jpg" class="w-100 img-fluid" />
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+          <div
+            class="bg-image hover-overlay ripple shadow-1-strong rounded"
+            data-ripple-color="light"
+          >
+            <img src="https://www.lavanguardia.com/files/content_image_mobile_filter/uploads/2020/09/30/5fad499869458.jpeg" class="w-100 " />
+
+          </div>
+        </div>
+
+         <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+          <div
+            class="bg-image hover-overlay ripple shadow-1-strong rounded"
+            data-ripple-color="light"
+          >
+            <img src="https://img.remediosdigitales.com/639ba7/buffet-2283843_1920/840_560.jpg" class="w-100 img-fluid" />
+          </div>
+        </div> 
+
+         <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+          <div
+            class="bg-image hover-overlay ripple shadow-1-strong rounded"
+            data-ripple-color="light"
+          >
+            <img src="https://www.servigroup.com/assets/cache/uploads/cadena/animacion/900x600/actividades-fitness-ge.jpg" class="w-100 img-fluid" />
+          </div>
+        </div> 
+         <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+          <div
+            class="bg-image hover-overlay ripple shadow-1-strong rounded"
+            data-ripple-color="light"
+          >
+            <img src="https://img.travesiasdigital.com/2019/05/royal-bar-hotel-palace-tokio-japon.jpg" class="w-100 img-fluid" />
+          </div>
+        </div> 
+      </div>
+    </section>
+  </div>
+
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2022 Copyright
+  </div>
+</footer>
